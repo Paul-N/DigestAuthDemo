@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-ios</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <SupportedOSPlatformVersion>16.4</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\DigestAuthDemo.Xamarin_iOS\Main.cs">
+      <Link>Main.cs</Link>
+    </Compile>
+    <Compile Include="..\DigestAuthDemo.Xamarin_iOS\AppDelegate.cs">
+      <Link>AppDelegate.cs</Link>
+    </Compile>
+    <Compile Include="..\DigestAuthDemo.Xamarin_iOS\SceneDelegate.cs">
+      <Link>SceneDelegate.cs</Link>
+    </Compile>
+    <Compile Include="..\DigestAuthDemo.Xamarin_iOS\ViewController.cs">
+      <Link>ViewController.cs</Link>
+    </Compile>
+    <Compile Include="..\DigestAuthDemo.Xamarin_iOS\ViewController.designer.cs">
+      <Link>ViewController.designer.cs</Link>
+    </Compile>
+    <Compile Include="..\DigestAuthDemo.Xamarin_iOS\HttpBinService.cs">
+      <Link>HttpBinService.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="..\DigestAuthDemo.Xamarin_iOS\Main.storyboard">
+      <Link>Main.storyboard</Link>
+    </InterfaceDefinition>
+  </ItemGroup>
+</Project>
